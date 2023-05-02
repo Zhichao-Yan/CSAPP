@@ -10,6 +10,7 @@ typedef struct
     sem_t *mutex;
     sem_t *slots;
     sem_t *items;
+    //sem_t te;
 }sbuf_t;
 
 void sbuf_init(sbuf_t *sp,int n);
