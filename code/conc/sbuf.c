@@ -12,8 +12,7 @@ void sbuf_init(sbuf_t *sp,int n)
     //sp->mutex = 1;
     //sp->slots = n;
     //sp->items = 0; 
-    sem_t *mutex = sem_open("/mutex",O_CREAT, S_IRUSR | S_IWUSR, 1);
-    sp->mutex = mutex;
+    sp->mutex = sem_open("/mutex",O_CREAT, S_IRUSR | S_IWUSR, 1);
     sp->slots = sem_open("/slots",O_CREAT, S_IRUSR | S_IWUSR, n);
     sp->items = sem_open("/items",O_CREAT, S_IRUSR | S_IWUSR, 0);
     return;
