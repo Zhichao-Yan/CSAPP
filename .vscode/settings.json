@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "csapp.h": "c",
+        "unistd.h": "c",
+        "cstdio": "c",
+        "stdio.h": "c",
+        "signal.h": "c",
+        "setjmp.h": "c",
+        "ctype.h": "c",
+        "__threading_support": "c",
+        "__mutex_base": "c",
+        "mutex": "c",
+        "version": "c"
+    }
+}
